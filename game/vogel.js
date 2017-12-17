@@ -12,7 +12,7 @@ function vogel() {
     this.velocity = 0;
 
     this.show = function(){
-        image(this.vogel_image,this.x,this.y,50,50);
+        image(this.vogel_image,this.x,this.y,30,30);
     }
 
     this.up = function(){
@@ -28,6 +28,8 @@ function vogel() {
             this.y = height;
             this.velocity = 0;
         }
+
+
 
     }
 
