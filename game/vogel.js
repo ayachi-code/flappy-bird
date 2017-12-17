@@ -1,5 +1,10 @@
 function vogel() {
-  console.log("test");
+
+
+  this.show = function () {
+      ellipse(88,300,30,30)
+  }
+
 
 
 }
