@@ -1,17 +1,14 @@
-var background;
+var achtergrond;
 
 
 function preload() {
-      background = loadImage('/game/asset/background.jpg');
+      achtergrond = loadImage('/game/asset/background.jpg');
 }
 
-
-
 function setup() {
-  createCanvas(800,600);
-
+  createCanvas(400,600);
 }
 
 function draw() {
-  background(51);
+  background(achtergrond);
 }
