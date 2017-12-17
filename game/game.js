@@ -11,6 +11,7 @@ function preload() {
 function setup() {
   createCanvas(400,600);
   vogel = new vogel();
+  grond = new grond();
 
 }
 
