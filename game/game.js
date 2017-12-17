@@ -1,4 +1,5 @@
 var achtergrond;
+var vogel;
 
 
 function preload() {
@@ -7,6 +8,8 @@ function preload() {
 
 function setup() {
   createCanvas(400,600);
+  vogel = new vogel()
+
 }
 
 function draw() {
