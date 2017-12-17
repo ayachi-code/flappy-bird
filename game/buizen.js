@@ -13,7 +13,7 @@ function buizen() {
 
   this.show = function () {
         rect(this.buisboven_x,this.buisboven_y,30,this.g1)
-        rect(this.buisboven_x2,this.buisboven_y2,30,120)
+        rect(this.buisboven_x2,this.buisboven_y2,30,this.g2)
   }
 
   this.update = function() {
@@ -25,9 +25,12 @@ function buizen() {
           this.buisboven_x = 400;
           this.buisboven_x2 = 400;
 
-          this.g1 = random(200);
 
 
+          this.g1 = random(120,300);
+          this.g2 = random(120,234);
+
+        
 
       }
 
