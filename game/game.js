@@ -1,5 +1,7 @@
 var achtergrond;
 var vogel;
+var grond;
+
 
 
 function preload() {
@@ -8,7 +10,7 @@ function preload() {
 
 function setup() {
   createCanvas(400,600);
-  vogel = new vogel()
+  vogel = new vogel();
 
 }
 
@@ -16,6 +18,9 @@ function draw() {
   background(achtergrond);
   vogel.show()
   vogel.update();
+
+
+
 
 }
 
