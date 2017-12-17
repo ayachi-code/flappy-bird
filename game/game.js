@@ -18,3 +18,9 @@ function draw() {
   vogel.update();
 
 }
+
+function keyPressed() {
+    if (key == ' ') {
+      vogel.up();
+    }
+}
