@@ -1,6 +1,8 @@
 var achtergrond;
 var vogel;
 var grond;
+var begin = false;
+
 
 
 
@@ -19,7 +21,10 @@ function draw() {
   background(achtergrond);
   grond.show();
   vogel.show()
-  vogel.update();
+  if (begin == true) {
+      vogel.update();
+  }
+
 
 
 
@@ -28,6 +33,8 @@ function draw() {
 
 function keyPressed() {
     if (key == ' ') {
+      begin = true
+      console.log(begin);
       vogel.up();
     }
 }
