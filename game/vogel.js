@@ -6,7 +6,7 @@ function vogel() {
 
 
   this.show = function () {
-      ellipse(88,300,30,30)
+      ellipse(this.x,this.y,30,30)
   }
 
 
