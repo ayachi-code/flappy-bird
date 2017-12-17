@@ -1,4 +1,8 @@
+var background;
+
+
 function preload() {
+      background = loadImage('/game/asset/background.jpg');
 
 }
 
