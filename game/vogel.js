@@ -4,9 +4,12 @@ function vogel() {
 
 
 
-
   this.show = function () {
       ellipse(this.x,this.y,30,30)
+  }
+
+  this.update = function () {
+      
   }
 
 
