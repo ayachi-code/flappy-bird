@@ -1,6 +1,6 @@
 function vogel() {
-  this.x = 0;
-  this.y = 0;
+  this.x = 90;
+  this.y = height/2;
 
 
 
