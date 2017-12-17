@@ -1,6 +1,7 @@
 var achtergrond;
 var vogel;
 var grond;
+var buizen;
 var begin = false;
 
 
@@ -14,6 +15,7 @@ function setup() {
   createCanvas(400,600);
   vogel = new vogel();
   grond = new grond();
+  buizen = new buizen();
 
 }
 
