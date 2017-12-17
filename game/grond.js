@@ -2,7 +2,7 @@ function grond() {
   console.log("grond is geladen");
 
   this.x = 0;
-  this.y = 0;
+  this.y = 570;
 
 
   this.show = function() {
