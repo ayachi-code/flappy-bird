@@ -24,6 +24,7 @@ function draw() {
   grond.show();
   vogel.show()
   buizen.show();
+  buizen.update();
   if (begin == true) {
       vogel.update();
   }
