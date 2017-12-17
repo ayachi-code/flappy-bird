@@ -27,6 +27,8 @@ function vogel() {
         if (this.y > height){
             this.y = height;
             this.velocity = 0;
+        } else if (this.y > grond.y) {
+              console.log("git");
         }
 
 
