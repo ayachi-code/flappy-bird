@@ -17,6 +17,7 @@ function setup() {
 
 function draw() {
   background(achtergrond);
+  grond.show();
   vogel.show()
   vogel.update();
 
