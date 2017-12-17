@@ -1,4 +1,4 @@
-function buizen() {
+function buizen(hoeveel) {
   console.log("buizen zijn geladen ");
 
   this.buisboven_x = width/2;
@@ -30,7 +30,7 @@ function buizen() {
           this.g1 = random(120,300);
           this.g2 = random(120,234);
 
-        
+
 
       }
 
