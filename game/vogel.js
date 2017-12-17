@@ -1,13 +1,18 @@
 function vogel() {
-  this.x = 90;
-  this.y = height/2;
+
+
+  this.vogel_image = loadImage('/game/asset/vogel.png');
+
+
+    this.x = 90;
+    this.y = height/2;
 
     this.gravity = 1.1;
     this.lift = -25;
     this.velocity = 0;
 
     this.show = function(){
-        ellipse(this.x,this.y,30,30);
+        image(this.vogel_image,this.x,this.y,50,50);
     }
 
     this.up = function(){
