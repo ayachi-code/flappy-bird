@@ -23,6 +23,7 @@ function draw() {
   background(achtergrond);
   grond.show();
   vogel.show()
+  buizen.show();
   if (begin == true) {
       vogel.update();
   }
