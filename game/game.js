@@ -11,4 +11,10 @@ function setup() {
 
 function draw() {
   background(achtergrond);
+
+
+  ellipse(88,300,30,30)
+
+
+
 }
