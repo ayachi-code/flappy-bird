@@ -6,7 +6,7 @@ function grond() {
 
 
   this.show = function() {
-        rect(this.x,this.y,30,30);
+        rect(this.x,this.y,400,400);
   }
 
 
