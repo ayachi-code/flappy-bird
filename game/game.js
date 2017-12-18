@@ -2,6 +2,7 @@ var achtergrond;
 var vogel;
 var grond;
 var buizen;
+var buizen2;
 var begin = false;
 
 
@@ -16,6 +17,8 @@ function setup() {
   vogel = new vogel();
   grond = new grond();
   buizen = new buizen();
+
+
 
 }
 

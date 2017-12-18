@@ -1,6 +1,10 @@
 function buizen(hoeveel) {
   console.log("buizen zijn geladen ");
 
+
+
+
+
   this.buisboven_x = width/2;
   this.buisboven_y = 0;
 
@@ -12,7 +16,7 @@ function buizen(hoeveel) {
 
   this.wave = document.getElementById('wave');
 
-  this.speed = 0.5;
+  this.speed = 2.0;
 
 
   //Show buizen
@@ -20,6 +24,7 @@ function buizen(hoeveel) {
         rect(this.buisboven_x,this.buisboven_y,30,this.g1)
         rect(this.buisboven_x2,this.buisboven_y2,30,this.g2)
   }
+
 
 
   this.update = function() {
@@ -40,13 +45,18 @@ function buizen(hoeveel) {
           this.wave.innerHTML = "Wave " + this.wave_teller;
 
 
-          this.speed += 0.5
+          this.speed += 0.1;
 
           console.log(this.wave_teller);
 
           console.log(this.speed);
 
+          if (this.wave_teller % 10 === 0) {
+              this.speed += 0.05
+          }
 
+
+      } else if () {
 
       }
 
