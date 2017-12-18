@@ -7,7 +7,6 @@ var begin = false;
 
 
 
-
 function preload() {
       achtergrond = loadImage('/game/asset/background.jpg');
 }
@@ -16,7 +15,7 @@ function setup() {
   createCanvas(400,600);
   vogel = new vogel();
   grond = new grond();
-  buizen = new buizen(4);
+  buizen = new buizen();
 
 }
 
