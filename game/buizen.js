@@ -71,6 +71,10 @@ function buizen(hoeveel) {
   }
 
 
+  this.gameover = function () {
+        console.log("Jammer");
+  }
+
 
 
   this.raak = function (vogel) {
