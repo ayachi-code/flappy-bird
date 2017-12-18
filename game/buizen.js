@@ -73,6 +73,11 @@ function buizen(hoeveel) {
 
   this.gameover = function () {
         console.log("Jammer");
+        window.location.href = 'gameover/index.hmtl';
+
+
+
+
   }
 
 
