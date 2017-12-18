@@ -18,6 +18,9 @@ function buizen(hoeveel) {
 
   this.speed = 2.0;
 
+  this.count = 0;
+  this.score = document.getElementById('score')
+
 
   //Show buizen
   this.show = function () {
@@ -52,11 +55,15 @@ function buizen(hoeveel) {
           console.log(this.speed);
 
           if (this.wave_teller % 10 === 0) {
-              this.speed += 0.05
+              this.speed = 0.05
+          }
+
+          if (vogel.y > this.g1 || vogel.y < this.g2) {
+              this.count += 1;
+              score.innerHTML = "score " + this.count;
           }
 
 
-      } else if () {
 
       }
 
