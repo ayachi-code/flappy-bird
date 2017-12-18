@@ -76,7 +76,7 @@ function buizen(hoeveel) {
   this.raak = function (vogel) {
     if (vogel.y < this.g2 || vogel.y > height - this.g1) {
       if (vogel.x > this.buisboven_x2 && vogel.x < this.buisboven_x + 30) {
-            console.log("jojo");
+            this.gameover();
             return true;
       }
 
