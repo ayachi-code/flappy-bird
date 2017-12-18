@@ -30,8 +30,14 @@ function draw() {
       vogel.update();
       buizen.show();
       buizen.update();
-  }
 
+      if (buizen.raak(vogel)) {
+        console.log("hey");
+
+      }
+
+
+  }
 
 
 

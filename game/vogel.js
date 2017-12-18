@@ -1,7 +1,7 @@
 function vogel() {
 
 
-  this.vogel_image = loadImage('/game/asset/vogel.png');
+   this.vogel_image = loadImage('/game/asset/vogel.png');
 
 
     this.x = 90;
@@ -30,6 +30,8 @@ function vogel() {
         } else if (this.y > grond.y) {
               console.log("git");
         }
+
+      
 
 
 
