@@ -31,7 +31,7 @@ function draw() {
       buizen.show();
       buizen.update();
 
-      if (buizen.raak(vogel)) {
+      if (buizen.raak()) {
         console.log("he");
 
       }

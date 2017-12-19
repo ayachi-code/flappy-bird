@@ -79,7 +79,7 @@ function buizen(hoeveel) {
 
 
 //Als vogel buis raakt dan game over
-  this.raak = function (vogel) {
+  this.raak = function () {
     if (vogel.y > height - this.g2 || vogel.y < this.g1) {
         if (vogel.x < this.buisboven_x2 + 30 && vogel.x > this.buisboven_x) {
               return true;
