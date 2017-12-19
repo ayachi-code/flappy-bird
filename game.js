@@ -19,3 +19,10 @@ var vogel_bom = document.getElementById('bomv').addEventListener('click',() => {
   console.log(welke);
 
 });
+
+//Als flappy word ingeklikt
+var vogel_flappy = document.getElementById('flappy').addEventListener('click',() => {
+      welke = 1;
+      localStorage.setItem("welke-vogel",welke)
+      console.log(welke);
+});

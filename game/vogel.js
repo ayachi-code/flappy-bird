@@ -5,7 +5,7 @@ function vogel() {
 
     if (this.welke == 2) {
       this.vogel_image = loadImage('/vogels/bom.png');
-    } else {
+    } else if (this.welke == 1) {
       this.vogel_image = loadImage('/game/asset/vogel.png');
     }
 
