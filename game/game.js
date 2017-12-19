@@ -9,7 +9,7 @@ var begin = false;
 
 
 function preload() {
-      achtergrond = loadImage('/game/asset/background.jpg');
+      achtergrond = loadImage('asset/background.jpg');
 }
 
 function setup() {
@@ -48,7 +48,7 @@ function keyPressed() {
       begin = true
       console.log(begin);
       vogel.up();
-      var geluid_af = new Audio('/game/asset/geluid/sound.mp3');
+      var geluid_af = new Audio('asset/geluid/sound.mp3');
       geluid_af.play();
     }
 }

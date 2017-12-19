@@ -4,7 +4,7 @@ function grond() {
   this.x = 0;
   this.y = 570;
 
-  this.grond = loadImage('/game/asset/ground.png');
+  this.grond = loadImage('asset/ground.png');
 
 
   this.show = function() {
