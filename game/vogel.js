@@ -1,7 +1,14 @@
 function vogel() {
 
     this.welke = localStorage.getItem("welke-vogel")
-    //this.vogel_image = loadImage('/game/asset/vogel.png');
+
+
+    if (this.welke == 2) {
+      this.vogel_image = loadImage('/vogels/bom.png');
+    } else {
+      this.vogel_image = loadImage('/game/asset/vogel.png');
+    }
+
 
 
 
