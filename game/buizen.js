@@ -55,7 +55,7 @@ function buizen(hoeveel) {
           console.log(this.speed);
 
           if (this.wave_teller % 10 === 0) {
-              this.speed = 0.05
+              this.speed = 0.5
           }
 
           if (vogel.y > this.g1 || vogel.y < this.g2) {
@@ -75,21 +75,13 @@ function buizen(hoeveel) {
         console.log("Jammer");
         window.location.href = 'gameover/index.hmtl';
 
-
-
-
   }
 
 
-
+//Als vogel buis raakt dan game over
   this.raak = function (vogel) {
-    if (vogel.y < this.g2 || vogel.y > height - this.g1) {
-      if (vogel.x > this.buisboven_x2 && vogel.x < this.buisboven_x + 30) {
-            this.gameover();
-            return true;
-      }
-
-      return true;
+    if (vogel.y > height - this.g2) {
+        return true;
 
     }
 

@@ -32,7 +32,7 @@ function draw() {
       buizen.update();
 
       if (buizen.raak(vogel)) {
-        console.log("hey");
+        console.log("he");
 
       }
 
@@ -45,7 +45,7 @@ function draw() {
 }
 
 function keyPressed() {
-    if (key == ' ') {
+    if (key == ' ' || key == "W") {
       begin = true
       console.log(begin);
       vogel.up();
