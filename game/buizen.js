@@ -48,18 +48,20 @@ function buizen(hoeveel) {
           this.wave.innerHTML = "Wave " + this.wave_teller;
 
 
-          this.speed += 0.1;
+          this.speed += 0.5;
 
           console.log(this.wave_teller);
 
           console.log(this.speed);
 
-          if (this.wave_teller % 10 === 0) {
-              this.speed -= 2;
+          if (this.wave_teller % 20 === 0) {
+            console.log("laager");
+              this.speed -= 1;
           }
 
           if (vogel.y > this.g1 || vogel.y < this.g2) {
               this.count += 1;
+              localStorage.setItem('score', this.count);
               score.innerHTML = "score " + this.count;
           }
 

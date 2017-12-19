@@ -12,3 +12,20 @@ var config = {
   messagingSenderId: "527469947954"
 };
 firebase.initializeApp(config);
+
+
+
+
+var score = localStorage.getItem("score")
+
+var data = {
+  score: score,
+  naam: "bilal"
+}
+
+
+var ik_kan_geen_variable_verzinnen_voor_het_pakken_van_de_score = document.getElementById('naam').innerHTML = "Game over jouw score was " + score;
+
+var database = firebase.database();
+
+database.ref('scoren').push(data);
