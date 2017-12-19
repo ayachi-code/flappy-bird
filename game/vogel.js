@@ -42,6 +42,11 @@ function vogel() {
 
 
 
+        if (this.y >= grond.y) {
+            console.log("Hit de grond");
+            buizen.gameover();
+        }
+
 
 
     }
