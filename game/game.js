@@ -48,7 +48,7 @@ function keyPressed() {
       begin = true
       console.log(begin);
       vogel.up();
-      var geluid_af = new Audio('/game/asset/geluid/sound.m4a');
+      var geluid_af = new Audio('/game/asset/geluid/sound.mp3');
       geluid_af.play();
     }
 }
