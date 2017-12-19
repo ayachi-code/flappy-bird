@@ -11,6 +11,8 @@ var rscore = document.getElementById('highscore');
 
 var huidig = document.getElementById('huidig');
 
+var welke_vogela = localStorage.getItem("welke-vogel");
+
 rscore.innerHTML = "Jouw recenten score was " + descore;
 
 
@@ -29,3 +31,11 @@ var vogel_flappy = document.getElementById('flappy').addEventListener('click',()
       huidig.innerHTML = "Je gebruikt nu de klasieken vogel";
       console.log(welke);
 });
+
+
+
+if (welke_vogela == 1) {
+    huidig.innerHTML = "Je gebruikt nu de klasieken vogel";
+} else if (welke_vogela == 2) {
+    huidig.innerHTML = "Je gebruikt nu de bom vogel";
+}
