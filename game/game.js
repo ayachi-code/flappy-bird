@@ -33,7 +33,6 @@ function draw() {
 
       if (buizen.raak()) {
         buizen.gameover();
-
       }
 
 
@@ -49,5 +48,7 @@ function keyPressed() {
       begin = true
       console.log(begin);
       vogel.up();
+      var geluid_af = new Audio('/game/asset/geluid/sound.m4a');
+      geluid_af.play();
     }
 }
