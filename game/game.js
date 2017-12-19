@@ -32,7 +32,7 @@ function draw() {
       buizen.update();
 
       if (buizen.raak()) {
-        console.log("he");
+        buizen.gameover();
 
       }
 
