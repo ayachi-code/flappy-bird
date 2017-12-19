@@ -14,8 +14,6 @@ var config = {
 firebase.initializeApp(config);
 
 
-
-
 var score = localStorage.getItem("score")
 
 var data = {
