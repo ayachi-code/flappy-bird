@@ -4,10 +4,12 @@ function grond() {
   this.x = 0;
   this.y = 570;
 
+  this.grond = loadImage('/game/asset/ground.png');
+
 
   this.show = function() {
         fill(0,200,0)
-        rect(this.x,this.y,400,400);
+        image(this.grond,this.x,this.y,400,400);
   }
 
 
