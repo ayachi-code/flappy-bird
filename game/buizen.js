@@ -55,7 +55,7 @@ function buizen(hoeveel) {
           console.log(this.speed);
 
           if (this.wave_teller % 10 === 0) {
-              this.speed = 0.5
+              this.speed -= 2;
           }
 
           if (vogel.y > this.g1 || vogel.y < this.g2) {
@@ -73,7 +73,7 @@ function buizen(hoeveel) {
 
   this.gameover = function () {
         console.log("Jammer");
-        window.location.href = 'gameover/index.hmtl';
+        window.location.href = 'gameover/index.html';
 
   }
 
