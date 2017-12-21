@@ -16,9 +16,15 @@ firebase.initializeApp(config);
 
 var score = localStorage.getItem("score")
 
+
+var naam = localStorage.getItem("naam")
+var achternaam = localStorage.getItem("achternaam")
+
+var voledigen_naam = naam + " " + achternaam;
+
 var data = {
   score: score,
-  naam: "bilal"
+  naam: voledigen_naam
 }
 
 

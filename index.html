@@ -54,22 +54,24 @@
   });
 
   //Code onder
-  function onLogin(response) {
+  function loginf(response) {
     if (response.status == 'connected') {
       FB.api('/me?fields=first_name,last_name', function(data) {
         console.log(data);
         var welkom = document.getElementById('welkom');
         welkom.innerHTML = 'Welkom, ' + data.first_name + data.last_name+ ' bij Flappybird';
+        var onthoud_naam = localStorage.setItem("naam",data.first_name)
+        var onthoud_achternaam = localStorage.setItem("achternaam",data.last_name);
       });
     }
   }
 
   FB.getLoginStatus(function(response) {
   if (response.status == 'connected') {
-    onLogin(response);
+    loginf(response);
   } else {
     FB.login(function(response) {
-      onLogin(response);
+      loginf(response);
     }, {scope: 'user_friends, email'});
   }
 });
