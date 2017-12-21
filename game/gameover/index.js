@@ -22,6 +22,9 @@ var achternaam = localStorage.getItem("achternaam")
 
 var voledigen_naam = naam + " " + achternaam;
 
+document.getElementById("denaam").innerHTML = voledigen_naam;
+
+
 var data = {
   score: score,
   naam: voledigen_naam
